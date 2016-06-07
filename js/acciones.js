@@ -45,7 +45,7 @@ $(document).ready(function(e)
 			{
 				alert("dbr");
 				var sql = "INSERT INTO Clientes (nombre, apellido) VALUES (?, ?)";
-				ejecutar.executeSql (sql [v_nombre, v_apellido], function ()
+				ejecutar.executeSql (sql, [v_nombre, v_apellido], function ()
 				{
 					alert ("Cliente Agregado");
 				}, error);//executesql
